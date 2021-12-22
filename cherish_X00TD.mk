@@ -15,6 +15,16 @@ $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# CherishOS Official
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_FACE_UNLOCK_SUPPORTED := true
+CHERISH_BUILD_TYPE := OFFICIAL
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.cherish.maintainer=HarshhaaReddyPamarthi
+
+# Gapps Build
+WITH_GMS := true    
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := cherish_X00TD
 PRODUCT_DEVICE := X00TD
