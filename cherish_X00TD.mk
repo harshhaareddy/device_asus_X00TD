@@ -25,6 +25,9 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Gapps Build
 WITH_GMS := true    
 
+# Quick Tap
+TARGET_SUPPORTS_QUICK_TAP := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := cherish_X00TD
 PRODUCT_DEVICE := X00TD
